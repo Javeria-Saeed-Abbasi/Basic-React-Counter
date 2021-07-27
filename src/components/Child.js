@@ -8,9 +8,11 @@ const Child = () => {
     return (
             <div>
                 <h2>This is first child</h2>
-                <h2>Counter Value is: {counterValue} </h2>
-                <button onClick={ ()=> {counterValue[1](++counterValue[0])} }>INC</button>
-                
+                <h2>Value of Counter by Context API is: {counterValue} </h2>
+                <button onClick={ ()=> {counterValue[1](++counterValue[0])} }>Increment by Context API</button>
+                <br/><br/>
+                <button onClick={ ()=> {counterValue[1](--counterValue[0])} }>Decrement by Context API</button> 
+                <br/> <br/> <br/> <br/>
             </div>
     )
 }
